@@ -1,0 +1,180 @@
+// 宽度 .w-750
+@for $i from 1 through 750 {
+  .w-#{$i} {
+      width: #{$i}rpx;
+  }
+}
+
+// 高度 .h-750
+@for $i from 1 through 750 {
+  .h-#{$i} {
+      height: #{$i}rpx;
+  }
+}
+
+// 行高 .h-750
+@for $i from 1 through 750 {
+  .line-h-#{$i} {
+      line-height: #{$i}rpx;
+  }
+}
+
+// 文字大小 .f-size-32
+@for $i from 1 through 120 {
+  .f-size-#{$i} {
+      font-size: #{$i}rpx;
+  }
+}
+
+// 文字粗度 .f-bold-900
+@for $i from 1 through 900 {
+  .f-bold-#{$i} {
+      font-weight: #{$i};
+  }
+}
+
+// BorderRadius .br-32
+@for $i from 1 through 100 {
+  .br-#{$i} {
+      border-radius: #{$i}rpx;
+  }
+}
+
+
+// MarginLeft .ml-32
+@for $i from 1 through 750 {
+  .ml-#{$i} {
+      margin-left: #{$i}rpx;
+  }
+}
+
+// MarginTop .mt-32
+@for $i from 1 through 750 {
+  .mt-#{$i} {
+      margin-top: #{$i}rpx;
+  }
+}
+
+// MarginRight .mr-32
+@for $i from 1 through 750 {
+  .mr-#{$i} {
+      margin-right: #{$i}rpx;
+  }
+}
+
+// MarginBottom .mb-32
+@for $i from 1 through 750 {
+  .mb-#{$i} {
+      margin-bottom: #{$i}rpx;
+  }
+}
+
+// Padding .padding-32
+@for $i from 1 through 750 {
+  .padding-#{$i} {
+      padding: #{$i}rpx;
+  }
+}
+
+// 透明度 .op-1
+@for $i from 1 through 10 {
+  .op-#{$i} {
+      opacity: #{$i};
+  }
+}
+
+// 颜色相关 .color-fff
+$color-list: white, black, red, blue, lime, yellow, gray;
+
+@each $color in $color-list {
+  .color-#{$color} {
+      color: $color;
+  }
+
+  .bf-#{$color} {
+      background-color: $color;
+  }
+}
+
+// Flex相关
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-center {
+  justify-content: center;
+}
+
+.flex-col-center {
+  align-items: center;
+}
+
+.flex-all-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-evenly {
+  justify-content: space-evenly;
+}
+
+.item-align-start {
+  align-self: flex-start;
+}
+
+.item-align-end {
+  align-self: flex-end;
+}
+
+.item-align-center {
+  align-self: flex-end;
+}
+
+//定位相关
+.por {
+  position: relative;
+}
+
+.poa {
+  position: absolute;
+}
+
+.pof {
+  position: fixed;
+}
+
+// 文本相关
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@for $i from 1 to 3 {
+  .text-ellipsis-#{$i} {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: $i;
+      -webkit-box-orient: vertical;
+  }
+}
